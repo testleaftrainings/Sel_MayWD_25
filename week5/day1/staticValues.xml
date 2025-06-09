@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="staticData" thread-count="5" parallel="tests" verbose="5">
+  <parameter name="url" value="http://leaftaps.com/opentaps/"></parameter>
+
+  <test thread-count="5" name="StaticTest">
+  <parameter name="browser" value="chrome"></parameter>
+    <parameter name="userName" value="DemoSalesManager"></parameter>
+    <parameter name="passWord" value="crmsfa"></parameter>
+    <classes>
+      <class name="week5.day1.CreateLead"/>
+          </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="StaticTest1">
+  <parameter name="browser" value="firefox"></parameter>
+    <parameter name="userName" value="DemoCsr"></parameter>
+    <parameter name="passWord" value="crmsfa"></parameter>
+    <classes>
+           <class name="week5.day1.CreateLead"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
